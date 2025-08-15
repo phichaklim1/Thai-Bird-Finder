@@ -82,6 +82,88 @@
           <div class="chips" id="activeFilters"></div>
         </div>
       </div>
+      <div class="btns">
+            <button class="btn primary" id="btnSearch">ค้นหา</button>
+            <button class="btn" id="btnReset">ล้างค่า</button>
+            <button class="btn" id="btnExport">ดาวน์โหลดผลลัพธ์ (CSV)</button>
+          </div>
+
+          <div class="chips" id="activeFilters"></div>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:12px;">
+        <div class="filters">
+          <h3>คำอธิบายฟิลด์</h3>
+          <div class="p">
+            <strong>Category:</strong>
+            <div class="chips">
+              <div class="chip">A: บันทึกในธรรมชาติใน 50 ปีล่าสุด</div>
+              <div class="chip">B: ไม่มีบันทึกในธรรมชาติใน 50 ปีล่าสุด</div>
+              <div class="chip">C: ชนิดปล่อย/หลุดเลี้ยงและสืบพันธุ์เองได้</div>
+              <div class="chip">D: พบในธรรมชาติแต่มีโอกาสเป็นชนิดหลุดเลี้ยง</div>
+              <div class="chip">E: บันทึกที่เคยเผยแพร่ไว้อาจคลาดเคลื่อน</div>
+              <div class="chip">F: พบลูกผสมโดยไม่มีหลักฐานของชนิดแท้</div>
+            </div>
+          </div>
+          <div class="p" style="margin-top:8px;">
+            <strong>Seasonal status:</strong>
+            <div class="chips">
+              <div class="chip">R: อยู่อาศัยประจำถิ่น</div>
+              <div class="chip">N: นกอพยพฤดูไม่ทำรัง</div>
+              <div class="chip">B: นกอพยพฤดูทำรัง</div>
+              <div class="chip">P: นกอพยพผ่านทางช่วงฤดูใบไม้ผลิ/ใบไม้ร่วง</div>
+              <div class="chip">V: หลงนอกถิ่น (มีบันทึก ≤ 3 ครั้ง)</div>
+            </div>
+          </div>
+          <div class="p" style="margin-top:8px;">
+            <strong>Threat status:</strong>
+            <div class="chips">
+              <div class="chip">EX</div>
+              <div class="chip">EW</div>
+              <div class="chip">CR</div>
+              <div class="chip">EN</div>
+              <div class="chip">VU</div>
+              <div class="chip">NT</div>
+              <div class="chip">DD</div>
+              <div class="chip">LC/ว่าง</div>
+            </div>
+          </div>
+          <div class="foot-note">* ค่าใน select จะดึงอัตโนมัติจากข้อมูลในไฟล์</div>
+        </div>
+      </div>      <div class="panel" style="margin-top:12px;">
+        <div class="filters">
+          <h3>Abbreviation legend (EN)</h3>
+          <div class="legend">
+            <p><span class="blue"><strong>Category:</strong></span><br>
+              <b>A</b> recorded in an apparently wild state within the last 50 years;<br>
+              <b>B</b> not recorded in wild in last 50 years;<br>
+              <b>C</b> introduced, with feral breeding stock apparently self-supporting;<br>
+              <b>D</b> seen in apparently wild state but possibility of escape or release from captivity not excluded;<br>
+              <b>E</b> previously published records questionable owing to possibility of mistaken identification;<br>
+              <b>F</b> occurrence of apparent hybrid individuals without proof of genuine pure individuals
+            </p>
+
+            <p><span class="blue"><strong>Seasonal status:</strong></span><br>
+              <b>R</b> resident or presumed resident;<br>
+              <b>N</b> non-breeding visitor;<br>
+              <b>B</b> breeding visitor;<br>
+              <b>P</b> mainly spring and autumn passage migrant; <b>V</b> vagrant (non-breeding visitor with three or fewer records)
+            </p>
+
+            <p><span class="orange"><strong>Global/National threat status:</strong></span><br>
+              <b>EX</b> Extinct;<br>
+              <b>EW</b> Extinct in the wild;<br>
+              <b>CR</b> critically endangered;<br>
+              <b>EN</b> endangered;<br>
+              <b>VU</b> vulnerable;<br>
+              <b>NT</b> near-threatened;<br>
+              <b>DD</b> data-deficient; Either<br>
+              <b>LC</b> or Blank = Least Concern. National Threat Status is based on ONEP
+            </p>
+          </div>
+        </div>
+      </div>
     </aside>
 
     <main class="panel main">
