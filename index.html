@@ -12,15 +12,14 @@
     :root { --bg:#0b1220; --panel:#121a2a; --muted:#8ea0c2; --text:#e6eefc; --accent:#3bb2f6; --accent2:#1dd1a1; --chip:#1b2740; --border:#24314d; }
     *{box-sizing:border-box} html,body{height:100%} body{margin:0;background:var(--bg);color:var(--text);font:15px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
     header{position:sticky;top:0;z-index:10;background:linear-gradient(180deg,#0b1220,rgba(11,18,32,.85) 70%,rgba(11,18,32,0));backdrop-filter:saturate(120%) blur(6px);padding:14px 20px;border-bottom:1px solid var(--border)}
-    .brand{display:flex;align-items:center;gap:12px} .logo {
-      width: 36px; height: 36px;
-      border-radius: 12px;
-      overflow: hidden;                 /* crop corners */
-      border: 1px solid var(--border);  /* subtle border */
-      background: #0f1a2c;              /* dark fallback behind image */
-      box-shadow: 0 8px 22px rgba(11,18,32,.25);
-    }
-    .logo img{ width:100%; height:100%; object-fit:cover; display:block; } .title{font-weight:700;font-size:20px}
+    .brand{display:flex;align-items:center;gap:12px} .logo{
+  width:36px;height:36px;border-radius:12px;
+  overflow:hidden;                 /* ตัดให้โค้งมน */
+  border:1px solid var(--border);  /* เส้นขอบบาง ๆ */
+  background:#0f1a2c;              /* รองพื้นเข้ม */
+  box-shadow:0 8px 22px rgba(11,18,32,.25);
+}
+.logo img{ width:100%; height:100%; object-fit:cover; display:block; } .title{font-weight:700;font-size:20px}
     .subtitle{color:var(--muted);font-size:12px}
     #status{margin-left:8px;color:#bfe7ff;font-size:12px;border:1px solid #1e3858;padding:4px 8px;border-radius:8px;background:#0f1a2c}
     .container{padding:16px 20px 24px;display:grid;grid-template-columns:320px 1fr;gap:16px}
