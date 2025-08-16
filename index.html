@@ -48,7 +48,14 @@
 <body>
   <header>
     <div class="brand">
-      <div class="logo"></div>
+      <div class="logo">
+  <picture>
+    <source srcset="logo-bird-128.webp 1x, logo-bird-256.webp 2x" type="image/webp">
+    <img src="logo-bird-128.jpg"
+         srcset="logo-bird-128.jpg 1x, logo-bird-256.jpg 2x"
+         alt="Thai Bird Finder logo" width="36" height="36" loading="eager" decoding="async" />
+  </picture>
+</div>
       <div>
         <div class="title">Thai Bird Finder by Phichak Limprasutr</div>
         <div class="subtitle">สำหรับค้นหาชื่อนกและข้อมูลอื่นๆของนก ใช้ไฟล์ <code>Bird database.xlsx</code> หรือ <code>birds.json</code> <span id="status">กำลังเริ่มต้น…</span></div>
